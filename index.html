@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="./index.js"></script>
+    <title>Lesson 4</title>
+</head>
+<body>
+    <div class="flex flex-col items-center p-[20px] gap-[40px]">
+        <!--                                   Grade Classifier                         -->
+
+        <div id="grade_classifier" class="w-[500px] border-2 border-black p-[40px]">
+            <h1 class="text-center text-xl text-rose-950 font-bold mb-[30px]">Grade Classifier</h1>
+            <div class="flex justify-center gap-[20px]">
+                <input type="text" name="grade" id="grade" placeholder="Enter your grade" class="w-[150px] p-[10px] border-2 border-black">
+                <button id="score" class="border-4 border-cyan-800 border-x-cyan-500 p-2 bg-cyan-400 font-bold">Submit</button>
+            </div>
+            <div id="result" class="text-center mt-[10px]"></div>
+        </div>
+
+        <!--                                   Time Converter                         -->
+
+        <div id="time_converter" class="w-[500px] border-2 border-black p-[40px]">
+            <h1 class="text-center text-xl text-rose-950 font-bold mb-[30px]">Time Converter</h1>
+            <div class="flex justify-center gap-[20px]">
+                <input type="text" name="time" id="time" placeholder="Enter time" class="w-[150px] p-[10px] border-2 border-black">
+                <button id="time_enter" class="border-4 border-cyan-800 border-x-cyan-500 p-2 bg-cyan-400 font-bold">Submit</button>
+            </div>
+            <div id="result_time" class="text-center mt-[10px]"></div>
+        </div>
+
+        <!--                                   Password Strength Checker                         -->
+
+        <div id="password_checker" class="w-[500px] border-2 border-black p-[40px]">
+            <h1 class="text-center text-xl text-rose-950 font-bold mb-[30px]">Password Strength Checker</h1>
+            <div class="flex justify-center gap-[20px]">
+                <input type="password" name="myPassword" id="myPassword" placeholder="Enter your password" class="w-[180px] p-[10px] border-2 border-black">
+                <button id="password_enter" class="border-4 border-cyan-800 border-x-cyan-500 p-2 bg-cyan-400 font-bold">Submit</button>
+            </div>
+            <div id="result_password" class="text-center mt-[10px]"></div>
+        </div>
+
+        <!--                                   Day Of Week Finder                         -->
+
+        <div id="weekday_finder" class="w-[500px] border-2 border-black p-[40px]">
+            <h1 class="text-center text-xl text-rose-950 font-bold mb-[30px]">Day Of Week Finder</h1>
+            <div class="flex justify-center gap-[20px]">
+                <input type="number" name="dayOfWeek" id="dayOfWeek" min="1" max="7" class="w-[150px] p-[10px] border-2 border-black">
+                <button id="weekday_enter" class="border-4 border-cyan-800 border-x-cyan-500 p-2 bg-cyan-400 font-bold">Submit</button>
+            </div>
+            <div id="result_weekday" class="text-center mt-[10px]"></div>
+        </div>
+
+        <!--                                   Taxi Fare Calculator                         -->
+
+        <div id="taxi_fare" class="w-[500px] border-2 border-black p-[40px]">
+            <h1 class="text-center text-xl text-rose-950 font-bold mb-[30px]">Taxi Fare Calculator</h1>
+            <div class="flex justify-center gap-[20px]">
+                <div class="flex flex-col gap-[10px]">
+                    <input type="text" name="distance" id="distance" placeholder="Enter your distance" class="w-[180px] h-[30px] p-[5px] border-2 border-black">
+                    <input type="text" name="wait_time" id="wait_time" placeholder="Enter waiting time" class="w-[180px] h-[30px] p-[5px] border-2 border-black">
+                </div>
+                <button id="fare_enter" class="h-[50px] mt-[10px] border-4 border-cyan-800 border-x-cyan-500 p-2 bg-cyan-400 font-bold">Submit</button>
+            </div>
+            <div id="result_fare" class="text-center mt-[10px]"></div>
+        </div>
+        
+    </div>
+</body>
+</html>
